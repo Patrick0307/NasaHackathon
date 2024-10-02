@@ -76,29 +76,40 @@
 
           <div class="charts">
 
-              <!-- 主表：饼状图 -->
               <div class="charts-card">
-                  <h2 class="chart-title">Malaysia Climate Data</h2>
-                  <canvas id="pie-chart"></canvas>
+                <h2 class="chart-title">Malaysia Climate Data</h2>
+                <label for="y-axis-select">Select Y-axis Data:</label>
+                <select id="y-axis-select">
+                    <option value="Population">Population</option>
+                    <option value="Sea Level">Sea Level</option>
+                    <option value="CO2 Emission(Tons)">CO2 Emission (Tons)</option>
+                    <option value="Temperature">Temperature (°C)</option>
+                    <option value="Max Temperature">Max Temperature (°C)</option>
+                    <option value="Min Temperature">Min Temperature (°C)</option>
+                </select>
+                <canvas id="bar-chart"></canvas>
               </div>
 
-              <!-- Population: 线条图 -->
+              <div class="charts-card">
+                <h2 class="chart-title">Sea Level Source Data</h2>
+                <canvas id="bar-chart-sealevel"></canvas>
+              </div>
+
               <div class="charts-card">
                   <h2 class="chart-title">Population Source Data</h2>
-                  <canvas id="line-chart-population"></canvas>
+                  <canvas id="bar-chart-population"></canvas>
               </div>
 
-              <!-- CO2 Emission: 条形图 -->
               <div class="charts-card">
                   <h2 class="chart-title">CO2 Emission Source Data</h2>
-                  <canvas id="bar-chart-co2"></canvas>
+                  <canvas id="line-chart-co2"></canvas>
               </div>
 
-              <!-- Temperature: 线条图 -->
               <div class="charts-card">
                   <h2 class="chart-title">Temperature Source Data</h2>
                   <canvas id="line-chart-temperature"></canvas>
               </div>
+
 
           </div>
       </main>
@@ -112,5 +123,6 @@
     
     <!-- Custom JS -->
     <script src="../js/dashboard.js"></script>
+    <script src="../js/chart.js"></script>
   </body>
 </html>
