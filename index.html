@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>CyberForge</title>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+    
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="dashboard.css">
+    
+    <!-- Scripts -->
+    <!-- Chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="dashboard.js"></script>
+    <script src="malaysiachart.js"></script>
+
+
+
 
   </head>
   <body>
@@ -70,9 +83,24 @@
 
       <!-- Main -->
       <main class="main-container">
+
+          <!-- Country picker-->
           <div class="main-title">
               <h2>SDG IN CLASSROOM</h2>
+              <select id="country-select">
+                <option value="Cambodia">Cambodia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Laos">Laos</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mynamar">Myanmar</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+            </select>
           </div>
+
+
+
+          <!-- For chart-->
 
           <div class="charts">
 
@@ -116,13 +144,5 @@
       <!-- End Main -->
 
     </div>
-
-    <!-- Scripts -->
-    <!-- Chart.js-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="dashboard.js"></script>
-    <script src="chart.js"></script>
   </body>
 </html>

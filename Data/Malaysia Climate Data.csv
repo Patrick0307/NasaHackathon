@@ -1,4 +1,4 @@
-Country,Year,Population,Sea Level,CO2 Emission(Tons),Temperature(°C),Max Temperature(°C),Min Temperature(°C)
+Country,Year,Population,SeaLevel,CO2Emission,Temperature,maxTemperature,minTemperature
 MALAYSIA,2020,"32,447,400",,"291,071,360",25.78,34.4,19.73
 MALAYSIA,2019,"32,523,000",,"278,861,220",25.96,33.21,18.72
 MALAYSIA,2018,"32,382,300",,"269,248,670",25.54,32.65,18.78
